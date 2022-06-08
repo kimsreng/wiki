@@ -13,6 +13,7 @@ window.RenderWiki = class RenderWiki extends Wiki {
 				},
 				callback: (result) => {
 					$(".doc-sidebar").empty().append(result.message);
+					$(".sm-sidebar").empty().append(result.message);
 					this.activate_sidebars();
 					this.set_active_sidebar();
 					this.set_nav_buttons();
